@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bryan-goff-f7YQo-eYHdM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    flex-wrap: wrap;
+}
+
+.mainCircle {
+    width: 700px;
+    height: 700px;
+    border: 2px solid rgba(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    transform: perspective(800px) rotateX(70deg);
+    transform-style: preserve-3d;
+}
+
+.mainCircle>div {
+    width: 100px;
+    height: 100px;
+    outline: 2px solid rgba(255, 255, 255);
+    outline-offset: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 400px 50%;
+    transition: 10s;
+    transform-style: preserve-3d;
+}
+
+.mainCircle:hover>div {
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+
+
+.mainCircle>div>div {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(../img/Political-World-Map-3360.jpg);
+    background-size: auto 100%;
+    background-position: -90px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+    border-radius: 50%;
+    transition: 10s;
+}
+
+.mainCircle:hover>div>div {
+    transform: rotateX(-90deg) rotateY(360deg);
+    background-position: 0 0;
+}
+
+
+.mainCircle>figure {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotateX(90deg) translate(-50%, -50%) translateZ(300px);
+}
+
+.mainCircle>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    width: 100%;
+    /* height: 60px; */
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 100px;
+}
+
+.head>h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color: wheat;
+    text-shadow:  0 0 6px white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
