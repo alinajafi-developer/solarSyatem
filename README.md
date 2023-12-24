@@ -5,7 +5,7 @@
 
 
 
-- [Demo Project](https://aliafrouz.github.io/solarSyatem/)
+- [Demo Project](https://alinajafi-developer.github.io/solarSyatem/)
 
 - Developed by Ali Najafi
 
@@ -17,4 +17,4 @@
 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://www.instagram.com/aliafrouz_com) and [linkedin](https://www.linkedin.com/in/aliafrouz/)
+- How to reach me : with my [instagram](https://www.instagram.com/alinajafi_developer) and [linkedin](https://www.linkedin.com/in/alinajafi-developer/)
